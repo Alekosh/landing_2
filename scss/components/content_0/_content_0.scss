@@ -1,0 +1,27 @@
+.content_0 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  img {
+    max-width: 900px;
+    max-height: 528px;
+  }
+  h3{
+    font-family: $font-Slabo;
+    font-size: 32px;
+    text-align: right;
+
+    width: 407px;
+    margin-right: 114px;
+  }
+}
+.content_0:last-child{
+  display: flex;
+  flex-direction: row-reverse;
+
+  h3{
+    margin-left: 114px;
+    margin-right: 0;
+
+  }
+}

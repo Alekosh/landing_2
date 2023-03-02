@@ -1,0 +1,17 @@
+@media (max-width: 1400px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+      text-align: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+}
