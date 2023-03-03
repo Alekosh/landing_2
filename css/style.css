@@ -215,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   padding: 17px 27px 16px 22px;
   display: block;
+  text-align: center;
 }
 
 .secont__btn {
@@ -274,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 114px;
 }
 
-.content_0:last-child {
+.content_1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,11 +283,105 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.content_0:last-child h3 {
+.content_1 img {
+  max-width: 900px;
+  max-height: 528px;
+}
+
+.content_1 h3 {
   margin-left: 114px;
   margin-right: 0;
+  font-family: "Slabo 13px", serif;
+  font-size: 32px;
+  text-align: right;
+  width: 407px;
+}
+
+@media (max-width: 1802px) {
+  .content_0 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content_0 h3 {
+    margin-bottom: 50px;
+  }
+  .content_1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__item {
+  background: #CCC9A3;
+  margin: 15px 15px;
+}
+
+.product__item p:first-child {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.product__item p:last-child {
+  font-family: "Slabo 13px", serif;
+  font-size: 20px;
+  margin: 17px 0 30px 0;
+}
+
+.product__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 17px;
+}
+
+.product__title span {
+  font-size: 13px;
+}
+
+.product__title, .product__desc {
+  padding: 0 10px;
+}
+
+.product__titles {
+  text-align: center;
+}
+
+.product__titles h2 {
+  font-size: 40px;
+}
+
+.product__titles P {
+  font-size: 24px;
 }
 
 body {
